@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BORA HITECH-01</title>
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: "Baloo Bhai", cursive;
+      margin: 0px;
+      padding: 0px;
+      background: url("sky.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .left {
+      display: inline-block;
+      position: absolute;
+      left: 60px;
+      top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .left img {
+      position: absolute;
+      width: 70px;
+      right: 250;
+      display: inline-block;
+      border: 3px solid black;
+    }
+
+    .left div {
+      line-height: 19px;
+      font-size: 26px;
+      text-align: center;
+      position: relative;
+      top: 80px;
+    }
+
+    .mid {
+      display: block;
+      width: 36%;
+      margin: 29px auto;
+    }
+
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 43px;
+      display: inline-block;
+    }
+
+    .navbar {
+      display: inline-block;
+    }
+
+    .navbar li {
+      display: inline-block;
+      font-size: 25px;
+    }
+
+    .navbar li a {
+      color: black;
+      text-decoration: underline;
+      padding: 34px 23px;
+    }
+
+    .navbar li a:hover {
+      text-decoration: underline;
+      color: darkgray;
+    }
+
+    .btn {
+      font-family: "Baloo Bhai", cursive;
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      padding: center;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: rgb(31, 30, 30);
+    }
+
+    .form-group input {
+      font-family: "Dosis", sans-serif;
+      color: black;
+      width: 175px;
+      padding: 0px;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 3px auto;
+      font-size: 15px;
+      border-radius: 2px;
+      text-align: center;
+    }
+
+    .container h2 {
+      text-align: center;
+      color: brown;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+    .form-group input:hover {
+      background-attachment: pink;
+    }
+    .xyz {
+      padding: auto;
+      display: inline-block;
+      position: absolute;
+      left: 45.5%;
+      width: 55px;
+    }
+    .xyz input {
+      font-weight: bolder;
+      color: white;
+      background-color: black;
+      float: right;
+      border-radius: 10px;
+      width: 100px;
+      height: 30px;
+      border: 3px solid white;
+    }
+    .xyz input:hover {
+      background-color: gray;
+    }
+    .yz {
+      display: inline-block;
+      position: absolute;
+      left: 39%;
+    }
+    .yz input {
+      color: white;
+      background-color: black;
+      font-weight: bold;
+      border-radius: 10px;
+      width: 70px;
+      height: 30px;
+      border: 3px solid white;
+    }
+    .yz input:hover {
+      background-color: gray;
+    }
+    .container {
+      position: absolute;
+      right: 5px;
+      top: 185px;
+      font-family: "Dosis", sans-serif;
+      border: 4px solid brown;
+      color: black;
+      margin: 50px 90px;
+      padding: 55px;
+      width: 25%;
+      border-radius: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      float: right;
+      padding-right: 10px;
+    }
+
+    .para {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-align: left;
+      font-weight: bold;
+      color: black;
+      width: 800px;
+      padding: 20px;
+      top: 80px;
+    }
+    .heading {
+      position: relative;
+      left: 150px;
+      color: rgb(2, 16, 39);
+      font-size: 40px;
+      top: 35px;
+    }
+
+    .pro {
+      font-size: 45px;
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: bolder;
+      padding-left: 650px;
+      padding-top: 150px;
+    }
+    .gallery {
+      font-size: 50px;
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: bolder;
+      padding-left: 650px;
+      padding-top: 50px;
+      display: inline-block;
+      color: beige;
+    }
+
+    .iim1 img {
+      display: flex;
+      margin-top: 2px;
+      border: 4px solid black;
+      width: 310px;
+      justify-content: space-evenly;
+      position: relative;
+      left: 40px;
+    }
+    .para2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-align: left;
+      font-weight: bold;
+      color: black;
+      width: 1500px;
+      top: 7px;
+      position: relative;
+      left: 20px;
+    }
+    .prod {
+      font-size: 27px;
+      font-style: normal;
+      font-family: "Baloo Bhai", cursive;
+      left: 40px;
+      position: relative;
+      top: 10px;
+      text-decoration: underline;
+    }
+    .contact {
+      font-size: 45px;
+      position: relative;
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: bolder;
+      left: 630px;
+      top: 1650px;
+      color: rgb(178, 238, 178);
+      display: inline-block;
+    }
+    .im {
+      position: relative;
+      top: 1655px;
+      left: 640px;
+    }
+    .video {
+      display: flex;
+      flex-flow: row;
+      width: 1500px;
+      height: 350px;
+      justify-content: space-evenly;
+    }
+    .img1 {
+      border: 4px solid white;
+    }
+    .vid1 {
+      border: 4px solid white;
+    }
+    .img2 {
+      border: 4px solid white;
+    }
+    .p1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: black;
+      width: 800px;
+      top: -200px;
+      display: flex;
+      position: relative;
+      left: 500px;
+      top: -170px;
+      border: 3px solid black;
+    }
+    .hr {
+      border-top: 5px solid black;
+    }
+    .hr1 {
+      position: relative;
+      top: 140px;
+      border-top: 5px solid black;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="bora1.jpeg" alt="" />
+        <div>BORA HITECH NURSERY</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <h1 class="heading">ABOUT THIS NURSERY</h1>
+    <p class="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error
+      molestiae ullam reprehenderit corrupti a commodi voluptatem quo velit,
+      numquam inventore laboriosam asperiores distinctio ducimus sequi illum,
+      dolorem porro obcaecati cupiditate esse dolores veritatis earum nisi
+      maxime! Expedita qui quod mollitia, architecto eveniet autem! Nesciunt ut
+      molestias accusantium deleniti doloribus similique nisi voluptate
+      officiis? Doloribus, dignissimos repellat fugiat iure esse eos provident
+      molestiae. Doloribus ducimus sit corporis error suscipit magni non! Rem,
+      eos in possimus maxime ipsa sapiente similique illo vitae. Ab delectus,
+      dolorum illum commodi ullam est nihil vitae molestiae libero impedit quasi
+      laborum assumenda quisquam consequatur dignissimos. At porro impedit
+      perspiciatis ab minima eos pariatur illo reiciendis hic. Quaerat itaque
+      eius non autem, fugiat repellendus numquam eveniet alias saepe amet illum
+      deserunt, accusamus dicta, optio velit ea nobis debitis sequi illo
+      asperiores similique nulla ipsa? Debitis iste vitae voluptate, numquam
+      iusto repellendus error facilis vero amet dicta delectus quibusdam libero
+      exercitationem esse aliquam quisquam? Obcaecati consectetur omnis aut
+      blanditiis quisquam quis enim itaque animi aliquam in, dolorem suscipit
+      explicabo minima illum, totam unde necessitatibus id recusandae ipsum et!
+      Ipsum, iste ab expedita soluta doloribus quam exercitationem ducimus
+      consequuntur amet, mollitia iusto, esse excepturi magnam incidunt autem
+      accusamus rem debitis cum. Quod aperiam iure fugiat porro repellendus, rem
+      nulla, ab aliquam, delectus tempora obcaecati eaque magnam mollitia quas
+      eius iste sunt ratione dolore nobis distinctio quia! Perferendis
+      temporibus, illum dignissimos tenetur voluptates ab, libero debitis
+      recusandae quas laboriosam, soluta laudantium? Sint praesentium dolorum
+      ullam dicta rem obcaecati minima assumenda quos ipsum, molestiae debitis
+      similique reprehenderit maxime repudiandae nobis. Odit amet ut vel
+      maiores, quia, obcaecati ipsum voluptates quaerat est laborum totam
+      dignissimos officiis eveniet, ducimus facere aspernatur corrupti. Numquam
+      neque aliquid cupiditate voluptas dignissimos iusto, architecto error
+      asperiores culpa, fugiat dolores optio cumque at quaerat reprehenderit!
+      Quae, sequi nesciunt?
+    </p>
+    <hr class="hr1" />
+    <h2 class="pro">PRODUCTS</h2>
+    <p class="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+      necessitatibus eum deleniti accusamus neque voluptatibus officia
+      cupiditate facere unde, sapiente quod nobis atque esse soluta! Natus
+      necessitatibus minima voluptas aspernatur enim voluptate neque, nostrum
+      nulla similique provident illo cum quisquam maxime quis vero excepturi
+      fugiat, commodi sunt, asperiores quam qui consequatur illum dolores
+      quibusdam. Sint obcaecati impedit cumque, fugit et ut earum repellendus
+      recusandae. Voluptatum eius eum odio, maiores vel ut minima ex ratione
+      fugiat, nobis reprehenderit magnam officiis, veritatis tenetur sunt?
+      Laboriosam perspiciatis itaque et praesentium veniam magni at, voluptas
+      corrupti placeat delectus distinctio illo! Quisquam consequuntur dolor
+      libero!
+    </p>
+    <h3 class="prod">PRODUCTS AVAILABLE IN THE NURSERY</h3>
+    <div class="videos">
+      <div class="iim1">
+        <img src="brinjal.jpeg" alt="2" width="350px" />
+        <p class="p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellat
+          necessitatibus amet atque sequi architecto sint voluptatibus odit
+          totam sapiente assumenda itaque natus, dolores dolorem earum possimus
+          expedita ipsam reiciendis eius, voluptates odio laborum ratione optio!
+          Voluptatibus ipsum, eveniet neque temporibus ipsam ea porro quas
+          nulla, ratione beatae numquam animi.
+        </p>
+        <img src="papaya.jpeg" alt="3" width="350px" />
+        <p class="p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          similique adipisci inventore, ratione aut soluta alias aliquam
+          praesentium quo incidunt quasi enim quae placeat, ab veritatis nisi
+          corrupti corporis? Illo iure harum, aperiam deleniti, mollitia beatae
+          atque non error tempora at illum rem labore incidunt modi eos,
+          corrupti asperiores nulla.
+        </p>
+      </div>
+      <div class="iim1">
+        <img src="tomato.jpeg" alt="4" width="350px" />
+        <p class="p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          commodi nesciunt inventore earum similique quae odio, assumenda
+          voluptates asperiores? Atque sed nisi quas reprehenderit sunt, at
+          corporis nihil voluptate delectus eligendi autem alias veniam neque
+          placeat necessitatibus enim. Adipisci nisi inventore praesentium unde,
+          eveniet odit repudiandae culpa debitis explicabo sunt!
+        </p>
+        <img src="caulif;ower.jpeg" alt="5" width="350px" />
+        <p class="p1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque amet
+          illo omnis voluptatibus commodi facere! Velit saepe, repellendus
+          voluptatibus, provident soluta dignissimos nihil eius commodi alias
+          perferendis repellat qui natus quod nostrum sint, illum possimus
+          voluptates facere. Nam maiores cumque unde animi dolores aliquid,
+          eveniet sequi asperiores rerum ipsum aliquam?
+        </p>
+        <img src="bittergourd.jpeg" alt="6" width="350px" />
+        <p class="p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut
+          veniam possimus, quod magnam nemo dicta velit repellat sunt
+          voluptatibus, labore ex soluta accusamus magni molestiae recusandae!
+          Tempore nostrum quae, quam aut rem necessitatibus, dolorum quidem
+          laborum maxime minima, odio explicabo officia optio assumenda unde
+          eveniet voluptate? Dicta, quasi minus.
+        </p>
+      </div>
+      <div class="iim1">
+        <img src="marigold.jpeg" alt="7" width="350px" />
+        <p class="p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa
+          natus, perspiciatis doloribus ratione eveniet libero quam assumenda
+          repellat, harum inventore recusandae quo vitae at? Ab eius a at, odit
+          dolore eligendi, possimus quae minima iusto exercitationem, debitis
+          quod eos. Totam cum quis, nam sint delectus molestiae natus facere
+          excepturi.
+        </p>
+        <img src="cabbage.jpeg" alt="8" width="350px" />
+        <p class="p1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, esse
+          voluptates nesciunt porro amet aperiam non quisquam eius
+          necessitatibus molestias itaque, cupiditate hic. Magni doloribus
+          dignissimos nostrum temporibus officiis aliquid molestiae harum non
+          dolore illum! Repudiandae voluptates suscipit vitae quaerat ad quod
+          nisi minima nulla vel. Assumenda eius culpa laboriosam?
+        </p>
+      </div>
+      <hr class="hr" />
+      <h2 class="gallery">GALLERY</h2>
+      <div class="video">
+        <img class="img1" src="pic1.jpeg" alt="pic1" width="350px" />
+        <iframe class="vid1" src="video1.mp4" frameborder="0" width="350px"
+          >Video 1</iframe
+        >
+        <img class="img2" src="pic2.jpeg" alt="pic2" width="350px" />
+      </div>
+    </div>
+    <div class="container">
+      <h2>ENQUIRY FORM</h2>
+      <form action="noaction.php">
+        <label for="Name">Name: </label>
+        <div class="form-group">
+          <input type="text" name="" placeholder="First Name" />
+          <input type="text" name="" placeholder="Last Name" />
+        </div>
+        <br />
+        <label for="Age">Age: </label>
+        <div class="form-group">
+          <input type="number" name="" placeholder="Age" />
+        </div>
+        <br />
+        <label for="Contact No.">Contact No.: </label>
+        <div class="form-group">
+          <input type="number" name="" placeholder="mobileno." />
+        </div>
+        <br />
+        <label for="locality">Locality: </label>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Locality" />
+        </div>
+        <br />
+        <label for="gender">Gender: </label>
+        <div>Male <input type="radio" /> Female <input type="radio" /></div>
+        <br />
+        <label for="requirement">Requirement: </label><br />
+        <div class="form-group">
+          <textarea
+            type="text"
+            name=""
+            placeholder="Enter your Requirement"
+            cols="40"
+            rows="10"
+          ></textarea>
+        </div>
+        <br />
+        <div class="yz">
+          <input type="reset" name="" id="reset now" />
+        </div>
+        <br />
+        <br />
+        <div class="xyz">
+          <input type="submit" name="submit now" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
